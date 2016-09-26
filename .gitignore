@@ -1,0 +1,6 @@
+*.pdf
+*.xls*
+*.7z
+*.rar
+*.zip
+.gitignore
