@@ -1,7 +1,4 @@
 /**
-*   
-* @group 
-*
 * Heap sort - constructie heap top-down
 * programul genereaza heap-ul corespunzator unui vector generat cu valori aleatorii cu n=10 elemente
 * dupa care afisaza cum arata heap-ul corespunzator pentru ca utilizatorul sa poata verifica corectitudinea
@@ -15,7 +12,6 @@
 
 /** returneaza un intreg cuprins intre min si max */
 int intreg_aleator(int min, int max){
-    //srand(time(NULL));
     return rand() % (max-min+1) + min;
 }
 
@@ -72,8 +68,6 @@ void construieste_heap_top_down(int a[], int dimensiune_a, int b[], int asignari
 	int dimb = 0;
 	for (i=1;i<=dimensiune_a;i++){
 		push(b,&dimb,a[i],asignari,comparatii);
-		//printf("Dimensiunea vectorului b este: %d\n", dimb);
-		//printf("Vectorul b este: \t\t\t"); afisaza_vector(b,dimb);
 	}
 }
 
@@ -86,7 +80,6 @@ int main()
 	double cinci_double = 5.0;
 	int cinci_int = 5;
 
-	
 
 	int var,n;
 	int va[100], vc[100]; // vector asignari si vector comparatii
@@ -99,19 +92,11 @@ int main()
 			int b[n+1];
 			initializeaza_vector(&b,n+1);
 			genereaza_vector(&a,n,min,max);
-			//printf("Vectorul a este: "); afisaza_vector(a,n); printf("\n");
 			
-			//printf("Constructia bottom up a heapului:\n");
-			//printf("---------------------------------\n");
 			construieste_heap_top_down(&a,n,&b,&asignari,&comparatii);
 
-			
-			//printf("comparatii: %d\n",comparatii);
-			
 			va[n/100-1] += asignari;
-			//printf("asignari: %d\n",va[n/100-1]);
 			vc[n/100-1] += comparatii;
-			//printf("asignari: %d\n",vc[n/100-1]);
 		}
 	}
 	/** printarea rezultatelor pentru a genera graficul */

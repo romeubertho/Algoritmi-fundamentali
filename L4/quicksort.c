@@ -1,15 +1,11 @@
-/*
- *  , 
- * 
- * 
- * Laboratorul 4 - Quicksort
+/**
+ * Quicksort
  */
 
 #include <stdio.h>
 
 /** returneaza un intreg cuprins intre min si max */
 int intreg_aleator(int min, int max){
-    //srand(time(NULL));
     return rand() % (max-min+1) + min;
 }
 
@@ -88,12 +84,8 @@ int main()
 			int comparatii = 0, asignari = 0;
 			int a[n+1];
 			genereaza_vector(&a,n+1,min,max);
-			//afisaza_vector_in_consola(" =========== a:",a,n+1);
 
 			quick_sort(a,1,n,&asignari,&comparatii);
-
-			//afisaza_vector_in_consola("a: ---------------------",a,n+1);
-
 
 			va[n/100-1] += asignari;
 			vc[n/100-1] += comparatii;

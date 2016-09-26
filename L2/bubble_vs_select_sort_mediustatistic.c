@@ -1,7 +1,5 @@
 /**
 *   
-* @group 
-*
 * Bubble sort vs select sort caz mediu statistic
 */
 
@@ -14,7 +12,6 @@
 #define nl; printf("\n");
 
 int intreg_aleator(int min, int max){
-    //srand(time(NULL));
     return rand() % (max-min+1) + min;
 }
 
@@ -84,8 +81,6 @@ int main()
 
             va[n/100-1] += asignari*4;
             vc[n/100-1] += comparatii;
-
-
 
 
 

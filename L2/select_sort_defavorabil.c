@@ -1,7 +1,5 @@
 /**
 *   
-* @group 
-*
 * Select sort caz defavorabil
 */
 

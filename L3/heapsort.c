@@ -109,12 +109,9 @@ int main()
 			int comparatii = 0, asignari = 0;
 			int a[n+2];
 			genereaza_vector(&a,n+1,min,max);
-			//afisaza_vector_in_consola(" =========== a:",a,n+1);
 
 			int dim = 0; // dimensiune heap
 			heap_sort(a, n+2, &dim, &asignari, &comparatii);
-
-			//afisaza_vector_in_consola("a: ---------------------",a,n+1);
 
 
 			va[n/100-1] += asignari;

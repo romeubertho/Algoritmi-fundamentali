@@ -1,6 +1,4 @@
 /**
-  
-L7 -  nr 6
 Statistici dinamice de ordine
 */
 
@@ -22,7 +20,6 @@ typedef struct tip_nod{
 
 /** returneaza un intreg cuprins intre min si max */
 int intreg_aleator(int min, int max){
-    //srand(time(NULL));
     return rand() % (max-min+1) + min;
 }
 
@@ -75,15 +72,6 @@ nod* construieste(int a[],int lungime){
     nd->dim = lungime;
     int jum = lungime/2; /// jumatate
     nd->v = a[jum];
-    /*
-    printf("v=%d\n",nd->v);
-    printf("dd=%d\n",lungime-(jum+1));
-    printf("ds=%d\n",jum);
-
-
-    int y;
-    scanf("%d",&y);
-    */
 
     if (lungime-(jum+1) > 0){
         nd->d = construieste(a+jum+1,lungime-(jum+1));
@@ -104,7 +92,6 @@ int main(){
     int i, a[12];
     a[0] = 0;
     for (i = 1;i<=11;i++)
-        //a[i] = intreg_aleator(a[i-1]+1,a[i-1]+1000);
         a[i] = i-1;
 
 /// se afisaza vectorul sortat

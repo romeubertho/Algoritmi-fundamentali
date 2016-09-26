@@ -1,7 +1,5 @@
 /**
 *   
-* @group 
-*
 * Bubble sort vs select sort caz favorabil
 */
 

@@ -1,5 +1,5 @@
 /**   
-implementarea schemei din figura din indrumator  7 -(pagina2)
+implementarea schemei din fig1.png
 */
 
 #include <stdio.h>
@@ -112,14 +112,10 @@ nod** r3(nod**p,int dimensiune){
     for (i = 1; i<dimensiune; i++){
         if (p[i]->p!=0 && p[i]->d!=0){
             u[p[i]->p->i]->p = u[p[i]->d->i];
-            //u[i]->p->p = u[i]->d;
         }
         if (p[i]->s!=0 && p[i]->p!=0){
             u[p[i]->s->i]->p = u[p[i]->p->i];
         }
-
-
-        //else u[i]->p = 0;
 
         u[i]->d = 0;
     }
@@ -170,9 +166,6 @@ void afisare(nod**p,int dim){
 int main()
 {
     int a[] = {0,2,7,5,2,7,7,-1,5,2};
-    //int a2[] = {0,2,2,2,5,5,7,7,7,-1};   /// vectorul sortat; -1 = infinit
-    //int ai[] = {0}; /// indecsii vectorului sortat
-
     int dim = 10;
     nod* p[dim];
     int i;
@@ -195,9 +188,6 @@ int main()
 
 
 /// R2
-    //nod**q;
-    //q = r2(p,dim); /// din motive necunoscute nu merge cum as vrea
-
     int dimensiune = dim;
     nod*u[dimensiune];
     i = 0;

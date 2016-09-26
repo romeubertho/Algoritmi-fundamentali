@@ -7,13 +7,11 @@ int N95 = (int)(95.0/100* 10007);
 
 /** returneaza un intreg cuprins intre min si max */
 int intreg_aleator(int min, int max){
-    //srand(time(NULL));
     return rand() % (max-min+1) + min;
 }
 
 typedef struct tip_nod{
     int v; // valoarea
-    //int l; // lista din care face parte
     struct tip_nod *d,*s; // nodul drept si nodul stang
 } nod;
 

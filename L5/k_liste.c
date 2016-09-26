@@ -37,7 +37,6 @@ void initializeaza_vector(int *a,int n){
 
 /** returneaza un intreg cuprins intre min si max */
 int intreg_aleator(int min, int max){
-    //srand(time(NULL));
     return rand() % (max-min+1) + min;
 }
 
@@ -179,7 +178,6 @@ int main()
         hi[i+1] = i;
     }
 
-
     int ii;
     int j;
 
@@ -194,7 +192,6 @@ int main()
 
         build_max_heap(h,hi,k+1-sp,&ii);
         v[i] = h[1];
-        //printf("he\n");
         if  (i == n-1)
             break;
 

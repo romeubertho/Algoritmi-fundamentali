@@ -1,7 +1,4 @@
 /**
-*   
-* @group 
-*
 * Heap sort - constructie heap top-down
 * programul genereaza heap-ul corespunzator unui vector generat cu valori aleatorii cu n=10 elemente
 * dupa care afisaza cum arata heap-ul corespunzator pentru ca utilizatorul sa poata verifica corectitudinea
@@ -15,7 +12,6 @@
 
 /** returneaza un intreg cuprins intre min si max */
 int intreg_aleator(int min, int max){
-    //srand(time(NULL));
     return rand() % (max-min+1) + min;
 }
 
