@@ -115,8 +115,7 @@ public class DFS {
                         });
                         if (k[0])
                             p[0]--;
-                    }// else
-                        //throw new Exception("Nodurile au fost introduse gresit in fisier!");
+                    }
             });
         } while (p[0] != 0);  ///cat timp nu mai sunt noduri in sitva
         
