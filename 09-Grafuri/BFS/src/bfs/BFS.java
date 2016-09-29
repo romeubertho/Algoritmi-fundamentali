@@ -80,7 +80,6 @@ public class BFS {
         int p = 0;
         
         coada.add(lng.get(p).getId());    /// se adauga elementul de start in coada
-        //rez += String.format("%d ", coada.get(p));
         
         do {
             for (Nod j : lng){  /// se cauta in coada nodul de id egal cu nodul care trebuie vizitat
@@ -90,10 +89,8 @@ public class BFS {
                             coada.add(x);
                             rez += String.format("%d ", x);                            
                         }
-                        //break;
                     };
-                }// else
-                    //throw new Exception("Nodurile au fost introduse gresit in fisier!");
+                }
             }
             p++;
         } while (p < coada.size());
